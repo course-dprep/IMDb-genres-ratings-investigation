@@ -24,3 +24,4 @@ The main aim of this to have a basic structure, which can be easily adjusted to 
 - Many possible improvements remain. Comments and contributions are welcome!
 Research question 
 - The preliminary research question is if the genre of a movie has an influence on the rating of a movie. 
+Testing
