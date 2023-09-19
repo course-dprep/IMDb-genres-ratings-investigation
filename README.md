@@ -2,7 +2,14 @@
 # The influence of the genre on the average rating of a movie 
 
 ## Motivation of research question
-
+Why this research question? 
+We are interested if there are movie genres that get higher ratings then other movie genres. This can
+be interesting for film makers so they know which genre will gets the highest ratings, which can have
+influence in how big of a success the movie will be financially.
+Why this research method?
+We are going to choose for an one-way ANOVA because we only have two variables and the
+independent variable is a non-numeric variable, so an ANOVA is possible. Because the independent
+variable has more than two levels a t-test is not an option. 
 
 ## Method and results
 https://tilburgsciencehub.com/building-blocks/store-and-document-your-data/document-data/readme-best-practices/ 
