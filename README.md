@@ -24,7 +24,9 @@ The main aim of this to have a basic structure, which can be easily adjusted to 
 
 ## Dependencies
 - R 
-- R packages: `install.packages("stargazer")`
+- R packages: `install.packages("data.table")`, install.packages("dplyr"), install.packages("tidyverse")
+- IMDb dataset for genres: title.basics.tsv.gz
+- IMDb dataset for ratings: title.ratings.tsv.gz
 - [Gnu Make](https://tilburgsciencehub.com/get/make) 
 - [TeX distribution](https://tilburgsciencehub.com/get/latex/?utm_campaign=referral-short)
 - For the `makefile` to work, R, Gnu make and the TeX distribution (specifically `pdflatex`) need to be made available in the system path 
