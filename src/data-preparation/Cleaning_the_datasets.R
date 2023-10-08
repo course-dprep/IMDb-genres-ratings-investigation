@@ -8,7 +8,7 @@ library(data.table)
 imdb_ratings<- fread("imdb_ratings.csv", header = TRUE, sep = "\t")
 imdb_genres <- fread("imdb_genres.csv", header = TRUE, sep = "\t", fill = TRUE, quote = "")
 
-# When deviding the dataset in correct columns, some data started or with a double quotation mark and this had to be removed in order to merge the datasets correctly
+# When dividing the dataset in correct columns, some data started with a double quotation mark and this had to be removed in order to merge the datasets correctly
 imdb_genres$tconst <- gsub("^\"", "", imdb_genres$tconst)
 
 # Some variables in the dataset for genres included a double quatation mark and also had to be removed for correct resulsts
@@ -66,7 +66,7 @@ average_ratings <- merged_ratings_genres %>%
   group_by(genres) %>%
   summarise(Average_Rating = mean(average_ratings, na.rm = TRUE))
 
-#Merge the ratings with the genres to have them in one dataset
+#Merge the ratings with the genres to have them in one dataset.
 merged_average_ratings <- left_join(average_ratings, Grouped_by_genres, by = 'genres')
 
 # Split the cells including multiple genres into seperate rows
