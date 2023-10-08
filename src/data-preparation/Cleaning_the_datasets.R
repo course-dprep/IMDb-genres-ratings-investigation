@@ -69,28 +69,14 @@ average_ratings <- merged_ratings_genres %>%
 #Merge the ratings with the genres to have them in one dataset
 merged_average_ratings <- left_join(average_ratings, Grouped_by_genres, by = 'genres')
 
-#Calculate the total ratings for further research
-merged_average_ratings <- merged_average_ratings %>% 
-  mutate(total_rating = Average_Rating * N_genres)
+# Split the cells including multiple genres into seperate rows
+merged_average_ratings<- merged_average_ratings %>%
+  separate_rows(genres, sep = ",")
 
-#Loop through the genres to obtain the total ratings per genre.
-genre_ratings <- c()
-
-for (genre in unique_genres) {
-  total_rating <- sum(merged_average_ratings$total_rating[grepl(genre, merged_average_ratings$genres)], na.rm=TRUE)
-  genre_ratings <- rbind(genre_ratings, data.frame(genres = genre, total_rating = total_rating))
-}
-
-#Merge the datasets to obtain a dataset that has the average ratings per genre
-data_merged <- left_join(genre_ratings, movie_count_per_genre, by = 'genres')
-
-data_merged <- data_merged %>% 
-  mutate(average_rating_per_genre = total_rating / number)
-
-# Remove the column with total ratings, since this was only used to obtain the average ratings per genre
-data_merged <- data_merged %>% 
-  select(-total_rating)
+# Remove any values that are "\\N"
+merged_average_ratings <- merged_average_ratings %>%
+  filter(genres != "\\N")
 
 # Store the final data of the datasets in as 'data_merged.csv`
-write_csv(data_merged, file = "data_merged.csv")
+write_csv(merged_average_ratings, file = "data_merged.csv")
 
