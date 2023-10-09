@@ -9,6 +9,7 @@ result of this can be interesting for filmmakers, so they know which genre will 
 ratings, which can influence how big of a financial success the movie will be. For example, a 
 higher rating will lead to higher viewer satisfaction, leading people to recommend it to their 
 friends. This leads to higher ticket sales and, thus, to a higher box office. 
+
 Why this research method? 
 To answer our research question, we want to know if there is a significant difference between 
 the rating of genres. Genres are the independent variable, and they are categorial, and most 
