@@ -3,13 +3,19 @@
 
 ## Motivation of research question
 Why this research question? 
-We are interested if there are movie genres that get higher ratings then other movie genres. This can
-be interesting for film makers so they know which genre will gets the highest ratings, which can have
-influence in how big of a success the movie will be financially.
-Why this research method?
-We are going to choose for an one-way ANOVA because we only have two variables and the
-independent variable is a non-numeric variable, so an ANOVA is possible. Because the independent
-variable has more than two levels a t-test is not an option. 
+We would like to know if there is an effect of movie genres on the ratings of a movie. To 
+answer this question, we will compare the average rating of two genres with each other. The 
+result of this can be interesting for filmmakers, so they know which genre will get the highest 
+ratings, which can influence how big of a financial success the movie will be. For example, a 
+higher rating will lead to higher viewer satisfaction, leading people to recommend it to their 
+friends. This leads to higher ticket sales and, thus, to a higher box office. 
+Why this research method? 
+To answer our research question, we want to know if there is a significant difference between 
+the rating of genres. Genres are the independent variable, and they are categorial, and most 
+of the time, ANOVA is used when dealing with categorical variables. Furthermore, we want to 
+know if there is a significant difference between groups that can not be concluded with the 
+results of a linear regression and can with the results of an ANOVA. If there are significant 
+differences between groups, post hoc tests will be used to examine these differences further
 
 ## Method and results
 https://tilburgsciencehub.com/building-blocks/store-and-document-your-data/document-data/readme-best-practices/ 
