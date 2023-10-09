@@ -1,0 +1,52 @@
+---
+title: "anova_results"
+output: pdf_document
+date: "2023-10-09"
+---
+```{r, include=FALSE}
+# ANALYSING THE DATA
+library(car)
+library(emmeans)
+library(readr)
+library(xtable)
+```
+
+```{r, include=FALSE}
+# Import the cleaned dataset
+data_merged <- read_csv("data_merged.csv")
+
+# Perform an Anova with the two datasets, 'Average_Rating' being the dependent variable and 'genres' being the independent variable
+dataset_lm <- lm(Average_Rating ~ genres, data_merged, contrasts=list(genres=contr.sum))
+dataset_aov <- Anova(dataset_lm, type=3)
+
+# Create an anova table to be able to save it as a pdf file
+table_anova <- xtable(dataset_aov)
+
+# Set as data.frame to give nice output when printed
+table_anova <- as.data.frame(table_anova)
+```
+
+```{r}
+# ANOVA table results
+```
+
+```{r anova results, echo=FALSE, comment=NA}
+# Print the anova table
+print(table_anova)
+
+```
+```{r, include=FALSE}
+# Calculating estimated marginal means
+emmeans_results <- emmeans(dataset_lm, pairwise ~ genres, adjust="bonferroni")
+emmeans_results <- as.data.frame(emmeans_results)
+```
+
+```{r}
+# Emmeans results
+```
+
+```{r emmeans results, echo=FALSE, comment=NA}
+# Print the emmeans results
+print(emmeans_results)
+```
+
