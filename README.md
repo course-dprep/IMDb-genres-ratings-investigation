@@ -45,6 +45,9 @@ The main aim of this to have a basic structure, which can be easily adjusted to 
 - Tested under Linux Mint (should work in any linux distro, as well as on Windows and Mac) 
 - IMPORTANT: In `makefile`, when using `\` to split code into multiple lines, no space should follow `\`. Otherwise Gnu make aborts with error 193. 
 - Many possible improvements remain. Comments and contributions are welcome!
-Research question 
-- The preliminary research question is if the genre of a movie has an influence on the rating of a movie. 
-Testing
+## Repository overview 
+## Running instructions 
+## More Resources 
+
+## About
+Maurits van Elteren, Iris Berkvens and Hugo Snijders have contributed to the repository. The repository has been a part of the course Data prep & workflow management that we followed at Tilburg University.
