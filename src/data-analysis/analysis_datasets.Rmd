@@ -1,5 +1,5 @@
 ---
-title: "anova_results"
+title: "anova_and_emmeans_results"
 output: pdf_document
 date: "2023-10-09"
 ---
@@ -9,6 +9,7 @@ library(car)
 library(emmeans)
 library(readr)
 library(xtable)
+library(ggplot2)
 ```
 
 ```{r, include=FALSE}
@@ -49,4 +50,3 @@ emmeans_results <- as.data.frame(emmeans_results)
 # Print the emmeans results
 print(emmeans_results)
 ```
-
