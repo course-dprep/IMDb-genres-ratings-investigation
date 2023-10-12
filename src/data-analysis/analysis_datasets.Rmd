@@ -9,7 +9,6 @@ library(car)
 library(emmeans)
 library(readr)
 library(xtable)
-library(ggplot2)
 ```
 
 ```{r, include=FALSE}
