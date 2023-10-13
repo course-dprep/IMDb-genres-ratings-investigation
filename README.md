@@ -31,11 +31,11 @@ We used the following two datasets from IMDb:
 -  title.ratings.tsv.gz
 
 
-The two datasets were merged into one which made it easier to awnser the research question 
+The two datasets were merged into a single dataset to answer the research question.  
 
 ## Variables 
 
-The merged dataset exists out of four variables of which two where relevan in awensering the research question: 
+The merged dataset consists of four variables, two of which were relevant for answering the research question: 
 
 | Variables | Description                                              |
 | ----------|----------------------------------------------------------|
@@ -48,7 +48,7 @@ An One-way Anova will be performed on the dataset to reach a conclusion about th
 
 ## Results and interpretation 
 
-The ANOVA showed that there is a significant difference in ratings between genres (p <0.001). This result awnserd or research question already but we wanted to know which genres had the most posstive effect on ratings. The emmeans function compares the mean of one genre with the mean of every other genre. For every combination it becomes clear which one of the genres has a higher mean. From the results of the emmeans it becomes clear that Game-Show has the highest average rating, followed by Documentary and History.
+The ANOVA showed that there is a significant difference in ratings between genres (p <0.001). This result answered our research question already but we wanted to know which genres had the most posstive effect on ratings. The emmeans function compares the mean of one genre with the mean of another genre. For every combination it becomes clear which one of the genres has the biggest influence on the ratings. From the results of the emmeans it becomes clear that Game-Show has the highest average rating, followed by Documentary and History. When looking at the emmeans between genres, it also becomes clear that the genre Game-Show has the biggest influence on the ratings of movies where other genres exists next to Game-Show. 
 
 
 ## Repository Structure 
@@ -61,6 +61,24 @@ The ANOVA showed that there is a significant difference in ratings between genre
 ├── makefile
 ```
 # Running instructions 
+
+To run the code provided in this repository, the following instructions can be followed:
+
+1. Open the terminal (MacOS) or open Gitbash (Windows)
+   
+2. Clone this repository by typing in the following command in the terminal or command line:
+    'git clone https://github.com/course-dprep/IMDb-genres-ratings-investigation
+
+3. Set the working directory to the repository by typing the following command in the terminal or command line:
+   'cd IMDB-genres-ratings-investigation
+
+4. To run the code, type the following command:
+    'make'
+
+5. When the code is running, multiple files will appear in the working directory. One of these files is a .pdf file and includes the final analysis of the data as a knitted Rmarkdown file to a pdf.
+
+6. To remove any of the raw data files, the following command can be typed in the terminal or the command line:
+    'make clean' 
 
 ## Dependencies
 - R 
