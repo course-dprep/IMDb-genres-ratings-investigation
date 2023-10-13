@@ -67,19 +67,23 @@ To run the code provided in this repository, the following instructions can be f
 1. Open the terminal (MacOS) or open Gitbash (Windows)
    
 2. Clone this repository by typing in the following command in the terminal or command line:
-    'git clone https://github.com/course-dprep/IMDb-genres-ratings-investigation
-
+```
+    git clone https://github.com/course-dprep/IMDb-genres-ratings-investigation
+```
 3. Set the working directory to the repository by typing the following command in the terminal or command line:
-   'cd IMDB-genres-ratings-investigation
-
+```
+   cd IMDB-genres-ratings-investigation
+```
 4. To run the code, type the following command:
-    'make'
-
+```
+    make
+```
 5. When the code is running, multiple files will appear in the working directory. One of these files is a .pdf file and includes the final analysis of the data as a knitted Rmarkdown file to a pdf.
 
 6. To remove any of the raw data files, the following command can be typed in the terminal or the command line:
-    'make clean' 
-
+```
+    make clean 
+```
 ## Dependencies
 - R 
 - R packages: `install.packages("data.table")`, `install.packages("dplyr")`, `install.packages("tidyverse")`, `install.packages("car")`, `install.packages("emmeans")`, `install.packages("reporttools")`, `install.packages("readr")`
