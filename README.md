@@ -75,8 +75,6 @@ install.packages("emmeans")
 install.packages("xtable")
 install.packages("readr")
 ```
-- IMDb dataset for genres: title.basics.tsv.gz
-- IMDb dataset for ratings: title.ratings.tsv.gz
 - For the `makefile` to work, R and make need to be made available in the system path 
 
 ## Running the code 
@@ -105,16 +103,16 @@ To run the code provided in this repository, the following instructions can be f
 ```
 
 ## Resources 
-IMDb Non-commercial Datasets: <https://developer.imdb.com/non-commercial-datasets/>  
+[IMDb Non-commercial Datasets](https://developer.imdb.com/non-commercial-datasets/)
 
 ## Authors 
 This repository was created by team 5 for the course Data Preperation and Workflow Management taugth by Hannes Datta, at Tiburg university, as part of the Master's program Marketing Analytics. The repository is maintained by the members of Team 5: 
 
--  Maurits van Elteren
+-  Maurits van Elteren (m.a.j.m.vanelteren@tilburguniversity.edu)
   
--  Iris Berkvens
+-  Iris Berkvens (i.m.p.berkvens@tilburguniversity.edu)
    
--  Hugo Snijders
+-  Hugo Snijders (h.a.l.snijders@tilburguniversity.edu)
 
 
 ## Notes
