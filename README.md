@@ -48,17 +48,8 @@ An One-way Anova will be performed on the dataset to reach a conclusion about th
 
 ## Results and interpretation 
 
-The ANOVA showed that there is a significant difference in ratings between genres.
+The ANOVA showed that there is a significant difference in ratings between genres (p <0.001). 
 
-https://tilburgsciencehub.com/building-blocks/store-and-document-your-data/document-data/readme-best-practices/ 
-
-
-This is a basic example repository using Gnu make for a reproducible research workflow, as described in detail here: [tilburgsciencehub.com](http://tilburgsciencehub.com/). 
-
-The main aim of this to have a basic structure, which can be easily adjusted to use in an actual project.  In this example project, the following is done: 
-1. Download and prepare data
-2. Run some analysis
-3. Present results in a final pdf generated using LaTeX
 
 ## Repository Structure 
 ```
@@ -72,6 +63,8 @@ The main aim of this to have a basic structure, which can be easily adjusted to 
 ├── README.md
 ├── makefile
 ```
+# Running instructions 
+
 ## Dependencies
 - R 
 - R packages: `install.packages("data.table")`, `install.packages("dplyr")`, `install.packages("tidyverse")`, `install.packages("car")`, `install.packages("emmeans")`, `install.packages("reporttools")`, `install.packages("readr")`
@@ -81,6 +74,21 @@ The main aim of this to have a basic structure, which can be easily adjusted to 
 - [TeX distribution](https://tilburgsciencehub.com/get/latex/?utm_campaign=referral-short)
 - For the `makefile` to work, R, Gnu make and the TeX distribution (specifically `pdflatex`) need to be made available in the system path 
 - Detailed installation instructions can be found here: [tilburgsciencehub.com](http://tilburgsciencehub.com/)
+
+## Running the code 
+
+## Resources 
+IMDb Non-commercial Datasets: <https://developer.imdb.com/non-commercial-datasets/>  
+
+## Authors 
+This repository was created by team 5 for the course Data Preperation and Workflow Management taugth by Hannes Datta, at Tiburg university, as part of the Master's program Marketing Analytics. The repository is maintained by the members of Team 5: 
+
+-  Maurits van Elteren
+  
+-  Iris Berkvens
+   
+-  Hugo Snijders
+
 
 
 ## Notes
