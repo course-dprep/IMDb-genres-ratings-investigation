@@ -63,9 +63,9 @@ The ANOVA showed that there is a significant difference in ratings between genre
 # Running instructions 
 
 ## Dependencies
-- R  [installation guide] (https://tilburgsciencehub.com/building-blocks/configure-your-computer/statistics-and-computation/r/)
-- Make  [installation guide] (https://tilburgsciencehub.com/get/make)
-- Pandoc  [installation guide] (https://tilburgsciencehub.com/building-blocks/configure-your-computer/statistics-and-computation/pandoc/)
+- R  [installation guide](https://tilburgsciencehub.com/building-blocks/configure-your-computer/statistics-and-computation/r/)
+- Make  [installation guide](https://tilburgsciencehub.com/get/make)
+- Pandoc  [installation guide](https://tilburgsciencehub.com/building-blocks/configure-your-computer/statistics-and-computation/pandoc/)
 - R packages:
 ```
 install.packages("data.table")
