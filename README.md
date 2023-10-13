@@ -48,7 +48,7 @@ An One-way Anova will be performed on the dataset to reach a conclusion about th
 
 ## Results and interpretation 
 
-The ANOVA showed that there is a significant difference in ratings between genres (p <0.001). 
+The ANOVA showed that there is a significant difference in ratings between genres (p <0.001). This result awnserd or research question already but we wanted to know which genres had the most posstive effect on ratings. The emmeans function compares the mean of one genre with the mean of every other genre. For every combination it becomes clear which one of the genres has a higher mean. From the results of the emmeans it becomes clear that Game-Show has the highest average rating, followed by Documentary and History.
 
 
 ## Repository Structure 
