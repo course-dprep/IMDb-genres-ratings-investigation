@@ -1,8 +1,11 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=11726081&assignment_repo_type=AssignmentRepo)
 # The influence of the genre on the average rating of a movie 
 
+_"Is there an effect of the genre of a movie on the rating of a movie?"_
+
+
 ## Motivation of research question
-Why this research question? 
+
 We would like to know if there is an effect of movie genres on the ratings of a movie. To 
 answer this question, we will compare the average rating of two genres with each other. The 
 result of this can be interesting for filmmakers, so they know which genre will get the highest 
@@ -10,7 +13,7 @@ ratings, which can influence how big of a financial success the movie will be. F
 higher rating will lead to higher viewer satisfaction, leading people to recommend it to their 
 friends. This leads to higher ticket sales and, thus, to a higher box office. 
 
-Why this research method? 
+
 To answer our research question, we want to know if there is a significant difference between 
 the rating of genres. Genres are the independent variable, and they are categorial, and most 
 of the time, ANOVA is used when dealing with categorical variables. Furthermore, we want to 
