@@ -21,7 +21,35 @@ know if there is a significant difference between groups that can not be conclud
 results of a linear regression and can with the results of an ANOVA. If there are significant 
 differences between groups, post hoc tests will be used to examine these differences further
 
-## Method and results
+# Method and results
+
+## Datasets
+We used the following two datasets from IMDb:
+
+-  title.basics.tsv.gz
+  
+-  title.ratings.tsv.gz
+
+
+The two datasets were merged into one which made it easier to awnser the research question 
+
+## Variables 
+
+The merged dataset exists out of four variables of which two where relevan in awensering the research question: 
+
+| Variables | Description                                              |
+| ----------|----------------------------------------------------------|
+| Genre     | The genre of the movie (27 different levels)             |
+| Rating    | The rating that users of IMDb gave to the movie          | 
+
+## Research Method 
+
+An One-way Anova will be performed on the dataset to reach a conclusion about the influence of genres on ratings. We chose this form of analysis because we looking for differences in means of groups (genres) which is exactly what Anova can be used for. Genre will be used as the independent variable and rating as the dependent variable. To furhter invest the differences between the genres, the Anova was followed up with the function emmeans. 
+
+## Results and interpretation 
+
+The ANOVA showed that there is a significant difference in ratings between genres.
+
 https://tilburgsciencehub.com/building-blocks/store-and-document-your-data/document-data/readme-best-practices/ 
 
 
@@ -32,6 +60,18 @@ The main aim of this to have a basic structure, which can be easily adjusted to 
 2. Run some analysis
 3. Present results in a final pdf generated using LaTeX
 
+## Repository Structure 
+```
+├── gen
+   ├── analysis
+   ├── data-preparation
+   └── paper
+└── src
+   ├── data-analysis
+   ├── data-preparation
+├── README.md
+├── makefile
+```
 ## Dependencies
 - R 
 - R packages: `install.packages("data.table")`, `install.packages("dplyr")`, `install.packages("tidyverse")`, `install.packages("car")`, `install.packages("emmeans")`, `install.packages("reporttools")`, `install.packages("readr")`
