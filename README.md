@@ -62,6 +62,25 @@ The ANOVA showed that there is a significant difference in ratings between genre
 ```
 # Running instructions 
 
+## Dependencies
+- R  [installation guide] (https://tilburgsciencehub.com/building-blocks/configure-your-computer/statistics-and-computation/r/)
+- Make  [installation guide] (https://tilburgsciencehub.com/get/make)
+- Pandoc  [installation guide] (https://tilburgsciencehub.com/building-blocks/configure-your-computer/statistics-and-computation/pandoc/)
+- R packages:
+```
+install.packages("data.table")
+install.packages("tidyverse")
+install.packages("car")
+install.packages("emmeans")
+install.packages("xtable")
+install.packages("readr")
+```
+- IMDb dataset for genres: title.basics.tsv.gz
+- IMDb dataset for ratings: title.ratings.tsv.gz
+- For the `makefile` to work, R and make need to be made available in the system path 
+
+## Running the code 
+
 To run the code provided in this repository, the following instructions can be followed:
 
 1. Open the terminal (MacOS) or open Gitbash (Windows)
@@ -84,17 +103,6 @@ To run the code provided in this repository, the following instructions can be f
 ```
     make clean 
 ```
-## Dependencies
-- R 
-- R packages: `install.packages("data.table")`, `install.packages("dplyr")`, `install.packages("tidyverse")`, `install.packages("car")`, `install.packages("emmeans")`, `install.packages("reporttools")`, `install.packages("readr")`
-- IMDb dataset for genres: title.basics.tsv.gz
-- IMDb dataset for ratings: title.ratings.tsv.gz
-- [Gnu Make](https://tilburgsciencehub.com/get/make) 
-- [TeX distribution](https://tilburgsciencehub.com/get/latex/?utm_campaign=referral-short)
-- For the `makefile` to work, R, Gnu make and the TeX distribution (specifically `pdflatex`) need to be made available in the system path 
-- Detailed installation instructions can be found here: [tilburgsciencehub.com](http://tilburgsciencehub.com/)
-
-## Running the code 
 
 ## Resources 
 IMDb Non-commercial Datasets: <https://developer.imdb.com/non-commercial-datasets/>  
@@ -109,12 +117,8 @@ This repository was created by team 5 for the course Data Preperation and Workfl
 -  Hugo Snijders
 
 
-
 ## Notes
-- `make clean` removes all unncessary temporary files. 
-- Tested under Linux Mint (should work in any linux distro, as well as on Windows and Mac) 
+- `make clean` removes all unnecessary raw data files.
+- Tested under MacOS
 - IMPORTANT: In `makefile`, when using `\` to split code into multiple lines, no space should follow `\`. Otherwise Gnu make aborts with error 193. 
 - Many possible improvements remain. Comments and contributions are welcome!
-Research question 
-- The preliminary research question is if the genre of a movie has an influence on the rating of a movie. 
-Testing
