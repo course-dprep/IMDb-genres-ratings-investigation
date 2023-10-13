@@ -53,10 +53,7 @@ The ANOVA showed that there is a significant difference in ratings between genre
 
 ## Repository Structure 
 ```
-├── gen
-   ├── analysis
-   ├── data-preparation
-   └── paper
+
 └── src
    ├── data-analysis
    ├── data-preparation
