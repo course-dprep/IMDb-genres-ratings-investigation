@@ -3,6 +3,7 @@
 
 _"Does the genre of a movie influence the rating of this movie on IMDb?"_
 
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/2560px-IMDB_Logo_2016.svg.png)
 
 ## Motivation of research question
 
